@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_aoe3_units_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.reganthomas.myproject.AOE3UnitsScreen"
+    android:background="#C0C0C0">
+
+    <TextView
+        android:text="Age of Empires III Units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/aoe3Text"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="#FF0000" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/aoe3ListView"
+        android:layout_height="380dp"
+        android:layout_below="@+id/aoe3Text"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/backButton"
+        android:textColor="#FFFFFF"
+        android:background="#3333FF"
+        android:onClick="Back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

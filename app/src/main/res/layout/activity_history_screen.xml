@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_history_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.reganthomas.myproject.HistoryScreen"
+    android:background="#C0C0C0">
+
+    <TextView
+        android:text="Game History"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/historyHeader"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:text="Age of Empires is a series of PC games released by Ensemble Studios. There are three games in the main series."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/historyHeader"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"
+        android:id="@+id/text1"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1" />
+
+    <TextView
+        android:text="Age of Empires (1997)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/aoe1Text"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1" />
+
+    <TextView
+        android:text="Age of Empires (1999)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aoe2Text"
+        android:layout_below="@+id/aoe1Text"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1" />
+
+    <TextView
+        android:text="Age of Empires (2005)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aoe3Text"
+        android:layout_below="@+id/aoe2Text"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1" />
+
+    <TextView
+        android:text="Age of Mythology (2002) is considered part of the series as well. Each of the four games have their own expansions."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aoe3Text"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:id="@+id/text2"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1" />
+
+    <TextView
+        android:text="The Age of Empires series is a real time strategy game that has had great commercial success selling over 20 million copies and has recieved wide spread critical acclaim with reviewers. It also lead to the rise of similar games like Rise of Nations and Star Wars: Galactic Battlegrounds "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/text3"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/symbol"
+        android:id="@+id/aoe2Image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="19dp"
+        android:layout_toEndOf="@+id/aoe3Text"
+        android:layout_below="@+id/text3" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/backButton"
+        android:textColor="#FFFFFF"
+        android:background="#3333FF"
+        android:onClick="Back"/>
+</RelativeLayout>

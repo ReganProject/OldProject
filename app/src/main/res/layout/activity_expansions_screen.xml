@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_expansions_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.reganthomas.myproject.ExpansionsScreen"
+    android:background="#C0C0C0">
+
+    <TextView
+        android:text="Expansions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/expansionTitle"
+        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:textColor="#FF0000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Age of Empires"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/aoeHeader"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="#FF0000"
+        android:layout_below="@+id/expansionTitle"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Age of Empires II"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aoeHeader"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
+        android:id="@+id/aoe2Header"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:text="AOE – The Rise of Rome (1998)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aoeHeader"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/aoe1ex1Text"
+        android:textAppearance="@android:style/TextAppearance.Material.Body2" />
+
+    <TextView
+        android:text="Age of Mythology"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aomHeader"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="#FF0000"
+        android:layout_alignBottom="@+id/aomexText"
+        android:layout_alignEnd="@+id/aoe3Header"
+        android:layout_marginBottom="35dp" />
+
+    <TextView
+        android:text="AOE III – The Asian Dynasties (2007)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aoe3ex2Text"
+        android:layout_above="@+id/aomHeader"
+        android:layout_alignStart="@+id/aomHeader"
+        android:layout_marginBottom="24dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Body2" />
+
+    <TextView
+        android:text="AOE III – The War Chiefs (2006)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aoe3ex1Text"
+        android:layout_alignBottom="@+id/aoe3ex2Text"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="38dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Body2" />
+
+    <TextView
+        android:text="Age of Empires III"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aoe3Header"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="#FF0000"
+        android:layout_above="@+id/aoe3ex1Text"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:text="AOE II – The Forgotten (2013)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aoe2ex1Text"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/aoe2ex2Text"
+        android:textAppearance="@android:style/TextAppearance.Material.Body2" />
+
+    <TextView
+        android:text="AOE II – The African Kingdoms (2015)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aoe2ex2Text"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/aoe2ex3Text"
+        android:textAppearance="@android:style/TextAppearance.Material.Body2" />
+
+    <TextView
+        android:text="AOE II –  The Conquerors (2000)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aoe2ex1Text"
+        android:layout_below="@+id/aoe2Header"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@android:style/TextAppearance.Material.Body2" />
+
+    <TextView
+        android:text="AOE II – Rise of the Rajas (2016)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aoe2ex4Text"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/aoe3ex2Text"
+        android:textAppearance="@android:style/TextAppearance.Material.Body2" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/backButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#3333FF"
+        android:textColor="#FFFFFF"
+        android:onClick="Back"/>
+
+    <TextView
+        android:text="AOM – The Titans (2003)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aomexText"
+        android:textAppearance="@android:style/TextAppearance.Material.Body2"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/backButton"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_aomunits_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.reganthomas.myproject.AOMUnitsScreen"
+    android:background="#C0C0C0">
+
+    <TextView
+        android:text="Age of Mythology Units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/aomText"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="#FF0000" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/aomText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/aomListView"
+        android:layout_height="380dp" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/backButton"
+        android:background="#3333FF"
+        android:textColor="#FFFFFF"
+        android:onClick="Back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

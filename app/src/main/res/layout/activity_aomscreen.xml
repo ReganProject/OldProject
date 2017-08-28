@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_aomscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.reganthomas.myproject.AOMScreen"
+    android:background="#C0C0C0">
+
+    <TextView
+        android:text="Age of Mythology"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/aomHeader"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:text="Age of Mythology takes its inspiration and characters from Greek, Norse and Egyptian Mythology instead of Historical events like previous games."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aomHeader"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/text1"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1" />
+
+    <TextView
+        android:text="There is one main campaign storyline where you take control of Arkantos a Admiral from Atlantis going off to fight in the Trojan War. Over the course of journey you encounter mythologic events, heroes and the gods themselves."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:layout_below="@+id/text1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:text="There are four ages to advance through including the Archaic, Classical, Heroic and Mythic Ages."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text3"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:layout_below="@+id/text2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/aom"
+        android:id="@+id/aomImage"
+        android:layout_below="@+id/text3"
+        android:layout_toEndOf="@+id/aomHeader"
+        android:layout_marginTop="10dp"
+        android:layout_width="180dp"
+        android:layout_height="160dp" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:id="@+id/backButton"
+        android:textColor="#FFFFFF"
+        android:background="#3333FF"
+        android:onClick="Back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="40dp" />
+
+    <Button
+        android:text="Units"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/unitsButton"
+        android:textColor="#FFFFFF"
+        android:background="#3333FF"
+        android:onClick="Units"
+        android:layout_above="@+id/backButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp" />
+
+    <Button
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/homeButton"
+        android:onClick="Home"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/aomImage"
+        android:background="#3333FF"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>
